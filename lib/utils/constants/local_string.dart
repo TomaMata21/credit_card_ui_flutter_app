@@ -13,4 +13,9 @@ class LocalString {
   static const String outOfStock = "Out of Stock";
   static const String category = "Special design";
   static const String checkOut = "Check Out";
+  static const String shippingAddress = "Shipping address";
+  static const String address = "202 Wayne St,Durand, MI, 48429";
+  static const String payment = "Payment";
+  static const String change = "Change";
+  static const String proceed = "Proceed";
 }

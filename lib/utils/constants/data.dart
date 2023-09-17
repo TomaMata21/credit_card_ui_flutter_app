@@ -9,3 +9,8 @@ final data = [
   Product(name: "Glass", image: Assets.glass),
   Product(name: "Tote Bag", image: Assets.toteBag),
 ];
+
+final carts = [
+  Product(name: "Scarf", image: Assets.scarf),
+  Product(name: "Tote Bag", image: Assets.toteBag),
+];
