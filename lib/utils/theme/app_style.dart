@@ -8,12 +8,13 @@ class AppStyle {
   late final _Colors colors = _Colors();
   late final _Text text = _Text();
   late final _Insets insets = _Insets();
+  late final _Duration durations = _Duration();
 }
 
 @immutable
 class _Text {
   late final headlineLarge = TextStyle(
-    fontSize: 40.sp,
+    fontSize: 30.sp,
     fontWeight: FontWeight.bold,
     fontFamily: "Montserrat",
     color: $styles.colors.black,
@@ -27,7 +28,7 @@ class _Text {
   );
 
   late final bodySmall = TextStyle(
-    fontSize: 13.sp,
+    fontSize: 11.sp,
     fontWeight: FontWeight.w400,
     fontFamily: "Montserrat",
     color: $styles.colors.black,
@@ -55,7 +56,7 @@ class _Text {
   );
 
   late final subtitleSmall = TextStyle(
-    fontSize: 13.sp,
+    fontSize: 11.sp,
     fontWeight: FontWeight.w400,
     fontFamily: "Montserrat",
     color: $styles.colors.grey,
@@ -70,6 +71,11 @@ class _Colors {
   late final black = const Color(0xFF424347);
   late final white = const Color(0xFFFFFFFF);
   late final iconGrey = const Color(0xFF979797);
+}
+
+@immutable
+class _Duration {
+  final fast = const Duration(milliseconds: 300);
 }
 
 @immutable
