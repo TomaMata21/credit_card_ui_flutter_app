@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../utils/theme/app_style.dart';
+import '../cart/cart_screen.dart';
 import '../common/others/custom_bottom_navigation.dart';
 import 'home_page.dart';
 
@@ -16,9 +17,9 @@ class _HomeScreenState extends State<HomeScreen> {
 
   final screens = [
     const HomePage(),
-    Container(color: Colors.red),
-    Container(color: Colors.orange),
-    Container(color: Colors.green),
+    const HomePage(),
+    const CartScreen(),
+    const HomePage(),
   ];
 
   void onTapItem(int index) {
