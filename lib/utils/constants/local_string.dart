@@ -12,4 +12,5 @@ class LocalString {
   static const String inStock = "In Stock";
   static const String outOfStock = "Out of Stock";
   static const String category = "Special design";
+  static const String checkOut = "Check Out";
 }

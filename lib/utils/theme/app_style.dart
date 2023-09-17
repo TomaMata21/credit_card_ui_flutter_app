@@ -68,6 +68,7 @@ class _Text {
 class _Colors {
   late final purple = const Color(0xFF8688BC);
   late final grey = const Color(0xFFBBBBBB);
+  late final lightGrey = const Color(0xFFF3F3F3);
   late final buttonGrey = const Color(0xFFB5B5B5);
   late final black = const Color(0xFF424347);
   late final white = const Color(0xFFFFFFFF);
