@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ui_credit_app/screens/common/icons/custom_icons.dart';
-import 'package:ui_credit_app/utils/theme/app_style.dart';
 
+import '../../utils/theme/app_style.dart';
+import '../common/others/custom_bottom_navigation.dart';
 import 'home_page.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -32,36 +32,9 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       body: screens[currentIndex],
       backgroundColor: $styles.colors.white,
-      bottomNavigationBar: Padding(
-        padding: EdgeInsets.symmetric(
-          horizontal: $styles.insets.xs,
-          vertical: $styles.insets.sm,
-        ),
-        child: BottomNavigationBar(
-          type: BottomNavigationBarType.fixed,
-          elevation: 0,
-          onTap: onTapItem,
-          currentIndex: currentIndex,
-          backgroundColor: $styles.colors.white,
-          items: [
-            BottomNavigationBarItem(
-              icon: CustomIcons.homeIcon(index: currentIndex),
-              label: "",
-            ),
-            BottomNavigationBarItem(
-              icon: CustomIcons.searchIcon(index: currentIndex),
-              label: "",
-            ),
-            BottomNavigationBarItem(
-              icon: CustomIcons.cartIcon(index: currentIndex),
-              label: "",
-            ),
-            BottomNavigationBarItem(
-              icon: CustomIcons.moreIcon(index: currentIndex),
-              label: "",
-            ),
-          ],
-        ),
+      bottomNavigationBar: CustomBottomNavigation(
+        onTap: onTapItem,
+        currentIndex: currentIndex,
       ),
     );
   }
