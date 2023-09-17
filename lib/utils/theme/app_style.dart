@@ -35,9 +35,10 @@ class _Text {
   );
 
   late final bodyMedium = TextStyle(
-    fontSize: 16.sp,
-    fontWeight: FontWeight.w500,
+    fontSize: 13.sp,
+    fontWeight: FontWeight.bold,
     fontFamily: "Montserrat",
+
     color: $styles.colors.black,
   );
 
