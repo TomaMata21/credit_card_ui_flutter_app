@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:sizer/sizer.dart';
+import 'package:ui_credit_app/screens/cart/payment_screen.dart';
 
 import '../../utils/constants/data.dart';
 import '../../utils/constants/local_string.dart';
@@ -89,15 +90,22 @@ class CheckOutScreen extends StatelessWidget {
             ),
           ),
           Gap($styles.insets.s),
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: $styles.insets.s),
-            child: CustomButton(
-              label: LocalString.proceed,
-              onPressed: () {},
-              color: $styles.colors.buttonGrey,
-            ),
-          ),
         ],
+      ),
+      bottomNavigationBar: Padding(
+        padding: EdgeInsets.all($styles.insets.s),
+        child: CustomButton(
+          label: LocalString.proceed,
+          onPressed: () {
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const PaymentScreen(),
+              ),
+            );
+          },
+          color: $styles.colors.buttonGrey,
+        ),
       ),
     );
   }

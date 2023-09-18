@@ -16,6 +16,11 @@ class LocalString {
   static const String shippingAddress = "Shipping address";
   static const String address = "202 Wayne St,Durand, MI, 48429";
   static const String payment = "Payment";
+  static const String addNewCard = "Add New Card";
   static const String change = "Change";
   static const String proceed = "Proceed";
+  static const String payNow = "Pay Now";
+  static const String order = "Order";
+  static const String delivery = "Delivery";
+  static const String summary = "Summary";
 }

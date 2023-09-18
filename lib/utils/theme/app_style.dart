@@ -67,12 +67,17 @@ class _Text {
 @immutable
 class _Colors {
   late final purple = const Color(0xFF8688BC);
+  late final blue = const Color(0xFF7AA0DA);
+  late final red = const Color(0xFFEB7777);
   late final grey = const Color(0xFFBBBBBB);
   late final lightGrey = const Color(0xFFF3F3F3);
   late final buttonGrey = const Color(0xFFB5B5B5);
   late final black = const Color(0xFF424347);
+  late final deepBlack = const Color(0xFF3E3E3E);
   late final white = const Color(0xFFFFFFFF);
   late final iconGrey = const Color(0xFF979797);
+  late final inactiveGrey = const Color(0xFFD8D8D8);
+  late final activeGrey = const Color(0xFF989898);
 }
 
 @immutable
