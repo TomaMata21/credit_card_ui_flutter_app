@@ -23,4 +23,5 @@ class LocalString {
   static const String order = "Order";
   static const String delivery = "Delivery";
   static const String summary = "Summary";
+  static const String addCard = "Add Card";
 }

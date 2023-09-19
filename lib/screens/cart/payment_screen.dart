@@ -6,6 +6,7 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import '../../utils/constants/local_string.dart';
 import '../../utils/theme/app_style.dart';
 import '../common/buttons/custom_button.dart';
+import '../common/others/add_card_bottom_sheet.dart';
 import '../common/others/credit_card.dart';
 import '../common/others/line_info_item.dart';
 
@@ -120,7 +121,13 @@ class _PaymentScreenState extends State<PaymentScreen> {
                   ),
                 ),
                 GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    showModalBottomSheet(
+                        context: context,
+                        builder: (context) {
+                          return const AddCardBottomSheet();
+                        });
+                  },
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
