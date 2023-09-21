@@ -36,4 +36,7 @@ class LocalString {
   static const String orderedItems = "Ordered Items";
   static const String continueShopping = "Continue Shopping";
   static const String orderedDetails = "Order Details";
+  static const String search = "Search";
+  static const String profile = "Profile";
+  static const String noDataMessage = "Oups! Nothing to display.";
 }

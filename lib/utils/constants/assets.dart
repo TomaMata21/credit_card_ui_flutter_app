@@ -12,4 +12,6 @@ class Assets {
   static const String toteBag = "assets/images/totebag.png";
   static const String visa = "assets/images/visa.svg";
   static const String confetti = "assets/images/confetti.png";
+  static const String blank = "assets/images/blank.png";
+  static const String data = "assets/images/data.png";
 }

@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import '../../utils/theme/app_style.dart';
 import '../cart/cart_screen.dart';
 import '../common/others/custom_bottom_navigation.dart';
+import '../profile/profile_screen.dart';
+import '../search/search_screen.dart';
 import 'home_page.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -17,9 +19,9 @@ class _HomeScreenState extends State<HomeScreen> {
 
   final screens = [
     const HomePage(),
-    const HomePage(),
+    const SearchScreen(),
     const CartScreen(),
-    const HomePage(),
+    const ProfileScreen(),
   ];
 
   void onTapItem(int index) {
