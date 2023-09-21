@@ -5,6 +5,7 @@ import 'package:sizer/sizer.dart';
 import '../../../utils/constants/local_string.dart';
 import '../../../utils/theme/app_style.dart';
 import '../buttons/custom_button.dart';
+import 'custom_input.dart';
 
 class AddCardBottomSheet extends StatelessWidget {
   const AddCardBottomSheet({super.key});
@@ -17,107 +18,54 @@ class AddCardBottomSheet extends StatelessWidget {
       child: Padding(
         padding: EdgeInsets.all($styles.insets.xs),
         child: ListView(
-          // mainAxisSize: MainAxisSize.min,
-          // crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                IconButton(
-                  onPressed: () {},
-                  icon: Icon(
+                InkWell(
+                  onTap: () => Navigator.pop(context),
+                  child: Icon(
                     Icons.clear,
                     color: $styles.colors.black,
+                    size: $styles.insets.md,
                   ),
-                ),
+                )
               ],
             ),
-            Gap($styles.insets.sm),
+            Gap($styles.insets.xs),
             Text(
-              "Add New Card",
+              LocalString.addNewCard,
               style: $styles.text.bodyLarge.copyWith(
                 fontWeight: FontWeight.bold,
               ),
             ),
-            Gap($styles.insets.sm),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  "Name on card",
-                  style: $styles.text.subtitleSmall,
-                ),
-                Text(
-                  "Aycan Doganlar",
-                  style: $styles.text.bodyMedium.copyWith(
-                    color: $styles.colors.black,
-                    fontWeight: FontWeight.normal,
-                  ),
-                ),
-              ],
+            Gap($styles.insets.xs),
+            const CustomInput(
+              label: LocalString.nameOnCard,
+              value: LocalString.fullName,
             ),
             Gap($styles.insets.xs),
-            Divider(color: $styles.colors.grey),
-            Gap($styles.insets.xs),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  "Card number",
-                  style: $styles.text.subtitleSmall,
-                ),
-                Text(
-                  "1234  4567  7890  1234",
-                  style: $styles.text.bodyMedium.copyWith(
-                    color: $styles.colors.black,
-                    fontWeight: FontWeight.normal,
-                  ),
-                ),
-              ],
+            const CustomInput(
+              label: LocalString.cardName,
+              value: LocalString.cardNum,
             ),
-            Gap($styles.insets.xs),
-            Divider(color: $styles.colors.grey),
             Gap($styles.insets.xs),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      "Expiry Date",
-                      style: $styles.text.subtitleSmall,
-                    ),
-                    Text(
-                      "02/24",
-                      style: $styles.text.bodyMedium.copyWith(
-                        color: $styles.colors.black,
-                        fontWeight: FontWeight.normal,
-                      ),
-                    ),
-                  ],
+                CustomInput(
+                  label: LocalString.expiryDate,
+                  value: LocalString.expiryDateValue,
+                  width: 40.w,
                 ),
-                const Spacer(),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      "CVV",
-                      style: $styles.text.subtitleSmall,
-                    ),
-                    Text(
-                      ". . .",
-                      style: $styles.text.bodyMedium.copyWith(
-                        color: $styles.colors.black,
-                        fontWeight: FontWeight.normal,
-                      ),
-                    ),
-                  ],
+                CustomInput(
+                  label: LocalString.cvv,
+                  value: ". . .",
+                  width: 40.w,
                 ),
-                const Spacer(),
               ],
             ),
-            Gap($styles.insets.sm),
-            Divider(color: $styles.colors.grey),
+            Gap($styles.insets.xs),
             Padding(
               padding: EdgeInsets.all($styles.insets.s),
               child: CustomButton(

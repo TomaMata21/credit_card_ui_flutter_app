@@ -9,6 +9,7 @@ import '../common/buttons/custom_button.dart';
 import '../common/others/add_card_bottom_sheet.dart';
 import '../common/others/credit_card.dart';
 import '../common/others/line_info_item.dart';
+import 'complete_order_screen.dart';
 
 class PaymentScreen extends StatefulWidget {
   const PaymentScreen({super.key});
@@ -201,7 +202,14 @@ class _PaymentScreenState extends State<PaymentScreen> {
         padding: EdgeInsets.all($styles.insets.s),
         child: CustomButton(
           label: LocalString.payNow,
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const CompleteOrderScreen(),
+              ),
+            );
+          },
           color: $styles.colors.purple,
         ),
       ),

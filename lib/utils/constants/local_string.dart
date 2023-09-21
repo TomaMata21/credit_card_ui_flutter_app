@@ -24,4 +24,16 @@ class LocalString {
   static const String delivery = "Delivery";
   static const String summary = "Summary";
   static const String addCard = "Add Card";
+  static const String nameOnCard = "Name on card";
+  static const String fullName = "Aycan Doganlar";
+  static const String cardName = "Card number";
+  static const String cardNum = "1234  4567  7890  1234";
+  static const String expiryDate = "Expiry Date";
+  static const String expiryDateValue = "02/24";
+  static const String cvv = "CVV";
+  static const String orderComplete = "Order completed";
+  static const String orderNum = "Order number: #9876543";
+  static const String orderedItems = "Ordered Items";
+  static const String continueShopping = "Continue Shopping";
+  static const String orderedDetails = "Order Details";
 }

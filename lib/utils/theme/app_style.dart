@@ -38,7 +38,6 @@ class _Text {
     fontSize: 13.sp,
     fontWeight: FontWeight.bold,
     fontFamily: "Montserrat",
-
     color: $styles.colors.black,
   );
 
@@ -78,6 +77,7 @@ class _Colors {
   late final iconGrey = const Color(0xFF979797);
   late final inactiveGrey = const Color(0xFFD8D8D8);
   late final activeGrey = const Color(0xFF989898);
+  late final green = const Color(0xFF9FC78A);
 }
 
 @immutable
