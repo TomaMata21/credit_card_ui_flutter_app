@@ -23,6 +23,8 @@ dev_dependencies:
     sdk: flutter
 
   flutter_lints: ^2.0.3
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.3.2
 
 flutter:
 
@@ -39,3 +41,20 @@ flutter:
         - asset: assets/fonts/Montserrat/Montserrat-Bold.ttf
         - asset: assets/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf
           style: italic
+
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/logo_ic.png"
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: "assets/images/logo_ic.png"
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/images/logo_splash.png
+
+  android_12:
+    color: "#ffffff"
+    image: assets/images/logo_splash.png
+    icon_background_color: "#ffffff"
